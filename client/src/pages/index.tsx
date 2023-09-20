@@ -44,7 +44,7 @@ export default function Home() {
       formData.append("n_flashcard", "2");
 
       axios
-      .post("http://localhost:5000/converter", formData, {
+      .post("https://genanki-server.onrender.com/converter", formData, {
         responseType: "arraybuffer", // for receiving the file as a binary stream
       })
       .then((response) => {
